@@ -11,6 +11,45 @@ from resume_parser import (
     extract_experience,
     calculate_score
 )
+st.markdown("""
+<style>
+
+.card {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.label {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.value {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.skill {
+    display: inline-block;
+    background-color: #00ADB5;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+h2 {
+    color: #00ADB5;
+}
+
+</style>
+""", unsafe_allow_html=True)
 def show_upload():
  st.title("📃 Interview Edge System")
  st.header("📁 Upload Resume and get instant analysis :")
